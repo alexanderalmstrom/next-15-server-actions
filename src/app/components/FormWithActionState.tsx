@@ -1,10 +1,10 @@
 "use client";
 
 import { type ComponentProps, useActionState } from "react";
-import { exampleAction } from "../actions";
+import { exampleFormActionState } from "../actions";
 
 export default function FormWithActionState(props: ComponentProps<"form">) {
-  const [state, action] = useActionState(exampleAction, {
+  const [state, action] = useActionState(exampleFormActionState, {
     message: "",
   });
 
